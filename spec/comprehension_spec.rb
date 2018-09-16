@@ -207,7 +207,7 @@ describe "GIT" do
 # describe "DELETING BRANCHES:" do
   it "27. From master, what is the syntax for deleting a local branch called 
       'add-link'?" do
-    answer = "?"
+    answer = "git branch -d add-link"
     encoded_answer = "6f91ced397c25c02c099b56d71e11955ea660fa0"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -231,7 +231,7 @@ describe "GIT" do
 # describe "STATUS" do
   it "30. If index.html is being tracked and you modify it, but don't stage this change,
       what color will it be if you run 'git status'?" do
-    answer = "?"
+    answer = "red"
     encoded_answer = "78988010b890ce6f4d2136481f392787ec6d6106"
     expect(encode(answer)).to eq(encoded_answer)
   end
